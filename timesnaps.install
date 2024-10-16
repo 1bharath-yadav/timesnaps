@@ -1,0 +1,22 @@
+post_install() {
+  echo "The timesnaps timer has been installed."
+  echo "Please enable and start the timer manually using the following commands:"
+  echo "  systemctl --user enable timesnaps.timer"
+  echo "  systemctl --user start timesnaps.timer"
+  echo "snaps will store in "$(whoami)"/timesnaps directory"
+}
+
+post_upgrade() {
+  echo "Please restart the timesnaps timer manually using the following command:"
+  echo "  systemctl --user restart timesnaps.timer"
+  echo "snaps will store in "$(whoami)"/timesnaps directory"
+
+}
+
+pre_remove() {
+  echo "Please stop and disable the timesnaps timer manually using the following commands:"
+  echo "  systemctl --user stop timesnaps.timer"
+  echo "  systemctl --user disable timesnaps.timer"
+  echo "snaps will store in "$(whoami)"/timesnaps directory"
+
+}

@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer to take a screenshot every 30 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=30min
+Unit=snapper.service
+
+[Install]
+WantedBy=timers.target
