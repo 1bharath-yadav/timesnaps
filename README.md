@@ -11,35 +11,38 @@
 
 ## 📦 Requirements
 To run **Timesnaps**, you need:
-- `plasma-desktop`
-- `spectacle`
-- `systemd`
+-     spectacle
 
 ## 📥 Installation
 To install **Timesnaps**, follow these steps:
 
 **Clone the repository**:
-   `git clone https://github.com/1bharath-yadav/timesnaps.git
-   cd timesnap
-   makepkg -si`
-     or   
+    
+    git clone https://github.com/1bharath-yadav/timesnaps.git
+    cd timesnap
+    makepkg -si
+   or   
 download the package from repo archives
- `sudo pacman -U pkg.tar.gst`
+          
+    sudo pacman -U pkg.tar.gst
 
 Enable the Timesnaps timer:
-`plasma-desksystemctl --user enable timesnaps.timer`
+   
+    plasma-desksystemctl --user enable timesnaps.timer
 
 Start the Timesnaps timer:
 
-`systemctl --user start timesnaps.timer`
+    systemctl --user start timesnaps.timer
 
 📂 Screenshot Storage
 Snaps will be stored in the ~/timesnaps directory. You can change this location by modifying the configuration in the service file 
-`nano /usr/lib/systemd/user/timesnaps.service.`
-
+    
+    nano /usr/lib/systemd/user/timesnaps.service
+    
 ## ⚙️ Usage
 Once installed and running, Timesnaps will automatically take screenshots at the specified interval. You can check the timer status with:
-`systemctl --user status timesnaps.timer`
+    
+     systemctl --user status timesnaps.timer
 
 ## ❌ Uninstallation
 Remove the package:
@@ -48,8 +51,8 @@ Remove the package:
 
 To remove Timesnaps:
 
-`systemctl --user stop timesnaps.timer`
-`systemctl --user disable timesnaps.timer`
+    systemctl --user stop timesnaps.timer
+    systemctl --user disable timesnaps.timer
 
 
 ## 🤝 Contributing
