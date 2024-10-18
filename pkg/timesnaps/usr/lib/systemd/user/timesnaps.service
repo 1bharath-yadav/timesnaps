@@ -1,8 +1,0 @@
-[Unit]
-Description=Take Screenshot using Spectacle
-
-[Service]
-
-ExecStart=/home/Archer/bin/timesnap.sh
-
-Type=simple

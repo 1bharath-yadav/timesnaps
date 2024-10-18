@@ -1,1 +1,0 @@
-/home/Archer/projects/timesnaps/timesnap.sh
