@@ -24,7 +24,7 @@ To install **Timesnaps**, follow these steps:
    or   
 download the package from repo archives
           
-    sudo pacman -U pkg.tar.gst
+    sudo pacman -U package_name.pkg.tar.gst
 
 Enable the Timesnaps timer:
    
