@@ -9,7 +9,7 @@ depends=('plasma-desktop' 'spectacle' 'systemd')
 source=("timesnap.sh"
   "timesnaps.service"
   "timesnaps.timer")
-sha256sums=('3bcd65be99a67eaee623c08255b26a461688ef2d13079b0876a8d2fa177673cc'
+sha256sums=('40ab520e6256f688e03dc5e35fa339dae341843180fe82792f0d62fd7fba357c'
   '40cb866903ad5113dc80c75fe63fdf668a0b900a9bc90505f085aed5b77e35bd'
   '7de4ee7417fd5a954e0a42123953c66b4896ff5df0dfd93fb0a1d8028e685bd9')
 install=timesnaps.install
